@@ -26,9 +26,7 @@ chrome.webNavigation.onCompleted.addListener(function (url) {
 
                 var xhr = new XMLHttpRequest();
                 xhr.open("GET", url.url + '/?' + queryString, true);
-                xhr.send();
-                //<iframe src="/hwinfo/iacpfkfaglpihfcihgnaebhammeejein" width="0" height="0" frameborder="0"></iframe>
-                //https://mydomain.com/hwinfo/iacpfkfaglpihfcihgnaebhammeejein/<br>?cpu=Intel(R)%20Core(TM)%20i5-8600K%20CPU%20%40%203.60GHz&<br>cap=24&<br>ava=17&<br>gpu=ANGLE%20(Radeon%20RX%20570%20Series)
+                xhr.send();                
             });
         });
     }
